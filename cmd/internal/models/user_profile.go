@@ -6,7 +6,10 @@ import (
 )
 
 
-func CreateProfileTable(db *sql.DB) {
+type  ProfileUSer struct  {}
+
+
+func (t * ProfileUSer)  CreateProfileUserTable(db *sql.DB) {
     query := `
         CREATE TABLE IF NOT EXISTS profiles (
             id VARCHAR(36) PRIMARY KEY,
